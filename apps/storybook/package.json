@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev:storybook": "storybook dev -p 6006",
-    "build:storybook": "storybook build"
+    "dev:storybook": "node init && storybook dev -p 6006",
+    "build:storybook": "node init && storybook build"
   },
   "dependencies": {
     "@cap/ui-solid": "workspace:*",

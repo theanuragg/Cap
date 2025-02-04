@@ -4,10 +4,10 @@
   "private": true,
   "main": "src/index.ts",
   "scripts": {
-    "start": "node dist/src/index.js",
-    "dev": "ts-node src/index.ts",
-    "build": "tsc",
-    "start:dist": "node dist/src/index.js",
+    "start": "node init && node dist/src/index.js",
+    "dev": "node init && ts-node src/index.ts",
+    "build": "node init && tsc",
+    "start:dist": "node init && node dist/src/index.js",
     "lint": "eslint --fix src test",
     "test": "jest",
     "typecheck": "tsc --noEmit"

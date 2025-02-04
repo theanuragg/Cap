@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint src --cache",
     "typecheck": "tsc -b",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "devDependencies": {
     "react": "^18.2.0",

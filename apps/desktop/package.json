@@ -2,11 +2,11 @@
   "name": "@cap/desktop",
   "type": "module",
   "scripts": {
-    "dev": "cross-env RUST_BACKTRACE=1 dotenv -e ../../.env -- pnpm run preparescript && tauri dev",
-    "build:tauri": "dotenv -e ../../.env -- pnpm run preparescript && tauri build",
+    "dev": "node init && cross-env RUST_BACKTRACE=1 dotenv -e ../../.env -- pnpm run preparescript && tauri dev",
+    "build:tauri": "node init && dotenv -e ../../.env -- pnpm run preparescript && tauri build",
     "preparescript": "node scripts/prepare.js",
     "localdev": "dotenv -e ../../.env -- vinxi dev --port 3001",
-    "build": "vinxi build",
+    "build": "node init && vinxi build",
     "tauri": "tauri"
   },
   "dependencies": {
